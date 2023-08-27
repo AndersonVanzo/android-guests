@@ -1,4 +1,4 @@
-package com.knownt.guests.ui.absent
+package com.knownt.guests.ui.screens
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.knownt.guests.databinding.FragmentAbsentBinding
+import com.knownt.guests.ui.viewmodel.AbsentViewModel
 
 class AbsentFragment : Fragment() {
 

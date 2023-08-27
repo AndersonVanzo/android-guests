@@ -1,9 +1,10 @@
-package com.knownt.guests
+package com.knownt.guests.ui.screens
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.knownt.guests.databinding.ActivityGuestFormBinding
+import com.knownt.guests.ui.viewmodel.GuestFormViewModel
 
 class GuestFormActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGuestFormBinding

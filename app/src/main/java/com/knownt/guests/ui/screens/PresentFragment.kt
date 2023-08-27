@@ -1,4 +1,4 @@
-package com.knownt.guests.ui.home
+package com.knownt.guests.ui.screens
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.knownt.guests.databinding.FragmentAllGuestsBinding
+import com.knownt.guests.databinding.FragmentPresentBinding
+import com.knownt.guests.ui.viewmodel.PresentViewModel
 
-class AllGuestsFragment : Fragment() {
+class PresentFragment : Fragment() {
 
-    private var _binding: FragmentAllGuestsBinding? = null
+    private var _binding: FragmentPresentBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,12 +23,12 @@ class AllGuestsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val viewModel = ViewModelProvider(this)[AllGuestsViewModel::class.java]
+        val viewModel = ViewModelProvider(this)[PresentViewModel::class.java]
 
-        _binding = FragmentAllGuestsBinding.inflate(inflater, container, false)
+        _binding = FragmentPresentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textAllGuests
+        val textView: TextView = binding.textPresent
         viewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
