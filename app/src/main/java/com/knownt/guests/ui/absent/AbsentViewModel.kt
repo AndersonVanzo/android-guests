@@ -1,13 +1,13 @@
-package com.knownt.guests.ui.slideshow
+package com.knownt.guests.ui.absent
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class AbsentViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "This is absent Fragment"
     }
     val text: LiveData<String> = _text
 }
